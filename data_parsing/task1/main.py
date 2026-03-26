@@ -2,10 +2,10 @@ import sys
 
 target_key = "LISTEN_PORT"
 
-# Сначала читаем все строки из ввода
+# сначала читаем все строки из ввода
 lines = sys.stdin.readlines()
 
-# А потом ищем нужную строку
+# а потом ищем нужную строку
 for line in lines:
     if line.startswith(target_key):
         parts = line.split('=', 1)
